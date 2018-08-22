@@ -5,8 +5,10 @@ import org.junit.Test;
 public class ExampleTest {
 
 	@Test
-	public void test() {
-		fail("Not yet");
+	public void exampleMethodTest() {
+		Example ex = new Example();
+		
+		assertTrue(ex.exampleMethod());
 	}
 
 }
