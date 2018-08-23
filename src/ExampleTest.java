@@ -8,6 +8,7 @@ public class ExampleTest {
 	public void exampleMethodTest() {
 		Example ex = new Example();
 		
+		assertFalse(!ex.exampleMethod());
 		assertTrue(ex.exampleMethod());
 	}
 
