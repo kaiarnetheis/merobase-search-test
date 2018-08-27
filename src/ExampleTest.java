@@ -4,13 +4,13 @@ import org.junit.Test;
 
 public class ExampleTest {
 
-	@Test
-	public void exampleMethodTest() {
-		Example ex = new Example();
+	//@Test
+	//public void exampleMethodTest() {
+		//Example ex = new Example();
 		
-		assertEquals(new Example(), ex);
-		assertFalse(!ex.exampleMethod());
-		assertTrue(ex.exampleMethod());
-	}
+		//assertEquals(new Example(), ex);
+		//assertFalse(!ex.exampleMethod());
+		//assertTrue(ex.exampleMethod());
+	//}
 
 }
