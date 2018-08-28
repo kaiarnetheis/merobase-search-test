@@ -11,7 +11,6 @@ import static org.junit.Assert.assertArrayEquals;
  */
 public class BubbleSortTest {
 
-	/*
   private BubbleSort bubbleSort;
 
   @Before public void setUp() {
@@ -56,5 +55,5 @@ public class BubbleSortTest {
 
     int[] expectedArray = { 1, 2, 3, 4 };
     assertArrayEquals(expectedArray, input);
-  }*/
+  }
 }
