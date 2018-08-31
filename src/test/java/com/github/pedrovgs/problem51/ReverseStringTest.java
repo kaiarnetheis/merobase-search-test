@@ -31,50 +31,25 @@ public class ReverseStringTest {
     reverseString = new ReverseString();
   }
 
-  @Test(expected = IllegalArgumentException.class)
-  public void shouldNotAcceptNullStringsIterative() {
-    reverseString.reverseIterative(null);
+  @Test(expected = IllegalArgumentException.class) public void shouldNotAcceptNullStrings() {
+    reverseString.reverse(null);
   }
 
-  @Test public void shouldReturnAnEmptyStringIfTheInputIsEmptyIterative() {
-    String result = reverseString.reverseIterative("");
+  @Test public void shouldReturnAnEmptyStringIfTheInputIsEmpty() {
+    String result = reverseString.reverse("");
 
     assertEquals("", result);
   }
 
-  @Test public void shouldReturnTheSameStringIfTheInputStringContainsJustOneCharIterative() {
-    String result = reverseString.reverseIterative("a");
+  @Test public void shouldReturnTheSameStringIfTheInputStringContainsJustOneChar() {
+    String result = reverseString.reverse("a");
 
     assertEquals("a", result);
   }
 
-  @Test public void shouldReverseStringIterative() {
-    String result = reverseString.reverseIterative("Pedro");
+  @Test public void shouldReverseString() {
+    String result = reverseString.reverse("Pedro");
 
     assertEquals("ordeP", result);
-  }
-
-  @Test(expected = IllegalArgumentException.class)
-  public void shouldNotAcceptNullStringsRecursive() {
-    reverseString.reverseRecursive(null);
-  }
-
-  @Test public void shouldReturnAnEmptyStringIfTheInputIsEmptyRecursive() {
-    String result = reverseString.reverseRecursive("");
-
-    assertEquals("", result);
-  }
-
-  @Test public void shouldReturnTheSameStringIfTheInputStringContainsJustOneCharRecursive() {
-    String result = reverseString.reverseRecursive("a");
-
-    assertEquals("a", result);
-  }
-
-  @Test public void shouldReverseStringRecursive() {
-    String result = reverseString.reverseRecursive("Pedro");
-
-    assertEquals("ordeP", result);
-    
   }
 }
