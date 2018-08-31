@@ -13,12 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.pedrovgs.problem51;
+package com.github.pedrovgs.problem23;
 
 /**
- * Implement a method String reverse(String str) to reverse a String passed as parameter.
+ * Class created to simulate a File object for problem 23.
  *
  * @author Pedro Vicente Gómez Sánchez.
  */
-public class ReverseString {
+class FakeFile {
+
+  private final String[] lines;
+  private int index;
+
+  FakeFile(String... lines) {
+    this.lines = lines != null ? lines : new String[0];
+  }
+
+  String getLine() {
+    return index <= lines.length - 1 ? lines[index++] : null;
+  }
 }

@@ -13,12 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.github.pedrovgs.problem51;
+package com.github.pedrovgs.problem37;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
- * Implement a method String reverse(String str) to reverse a String passed as parameter.
- *
  * @author Pedro Vicente Gómez Sánchez.
  */
-public class ReverseString {
+public class PathCalculatorTest {
+
+  private PathCalculator pathCalculator;
+
+  @Before public void setUp() {
+    pathCalculator = new PathCalculator();
+  }
+
+  @Test(expected = IllegalArgumentException.class) public void shouldNotAcceptNullPaths() {
+    pathCalculator.calculate(null, null, null);
+  }
+
+  @Test public void shouldCalculatePath() {
+    String finalPath = pathCalculator.calculate("/usr/bin/mail", "../../../etc/xyz", "../abc");
+
+    assertEquals("/etc/abc/", finalPath);
+  }
 }
