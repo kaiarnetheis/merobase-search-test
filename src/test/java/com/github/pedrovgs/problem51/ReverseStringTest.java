@@ -25,7 +25,7 @@ import static org.junit.Assert.assertEquals;
  */
 public class ReverseStringTest {
 
-  private ReverseString reverseString;
+  /*private ReverseString reverseString;
 
   @Before public void setUp() {
     reverseString = new ReverseString();
@@ -75,5 +75,5 @@ public class ReverseStringTest {
     String result = reverseString.reverseRecursive("Pedro");
 
     assertEquals("ordeP", result);
-  }
+  }*/
 }
